@@ -43,7 +43,7 @@ int	queens_puzzle(char *chesstable, int *sol)
 	}
 	write(1, chesstable, TABLE_SIZE);
 	write(1, "\n", 1);
-	return ((*sol)++);
+	return (++(*sol));
 }
 
 int	ft_ten_queens_puzzle(void)
